@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import phone from './assets/phone.png'
+import "./actions/phone"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+       <div className='container'>
+         <img src={phone} alt='phone'></img>
+         <p>Disponibilité  <span id="count"> </span></p>
+         <button id='buy_now'>Acheter maintenant</button>
+
+       </div>
     </div>
   );
 }
